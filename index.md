@@ -6,7 +6,11 @@ I work at an Amazon fulfilment center currently, I thoroughly enjoy playing vide
 
 ## Portfolio Projects
 1.Media Queries
+
 2.Skeleton
+
 3.Flexbox
+
 4.Bootstrap
+
 5.UIKit
