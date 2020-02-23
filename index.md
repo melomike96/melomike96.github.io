@@ -6,12 +6,13 @@ I work at an Amazon fulfilment center currently, I thoroughly enjoy playing vide
 
 ## Portfolio Projects
 
-..*Media Queries
+- Media Queries
 
-..* Skeleton
+- Skeleton
 
-..* Flexbox
+- Flexbox
 
-..* Bootstrap
+- Bootstrap
 
-..* UIKit
+- UIKit
+ 
