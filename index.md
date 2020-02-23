@@ -4,6 +4,7 @@ Hello everyone! My name is Michael Scarazza, I am current student at Delaware Co
 
 I work at an Amazon fulfilment center currently, I thoroughly enjoy playing video games, and relaxing with my girlfriend whether that be just watching tv or going out on a hike.
 
+I will be posting my future projects on this site, I am excited to learn more on this journey!
 ## Portfolio Projects
 
 - Media Queries
