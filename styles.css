@@ -1,0 +1,140 @@
+/* General */
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body {
+    font family: Arial, sans-serif;
+    line-height: 1.4;
+    color: #333;
+    overflow-x: hidden;
+}
+/* Utility */
+
+.container {
+    max-width:1100px;
+    margin:auto;
+    
+}
+.text-primary {
+    color:#3693ff;
+}
+/* Navbar */
+#navbar {
+    display:flex;
+    justify-content:space-between;
+    background: #333;
+    color: #fff;
+    padding: 1.5rem 8rem;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    border-bottom: 3px solid #3693ff;
+}
+#navbar ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+#navbar h2 a{
+    color: #fff;
+    text-decoration: none;
+}
+#navbar li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 1rem;
+    font-size: 1.3rem;
+    margin: 0 0.5rem;
+    border-radius: 5px;
+    transition: background-color 0.5s;
+}
+#navbar li a:hover{
+    background-color: #3693ff;
+}
+/* Main area */
+#showcase {
+    background: url(img/background.jpg) no-repeat center center/cover;
+    height: 100vh;
+}
+.showcase-content {
+    display:flex;
+    flex-direction:column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0,0,0,0.6);
+    color: #fff;
+    
+}
+.showcase-content h1{
+    font-size: 3.5rem;
+    margin-bottom: 2rem;
+}
+#about{
+    padding: 5rem 0;
+    
+}
+#about h2{
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    
+}
+#about h3{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+#about p.random{
+    margin-bottom: 1rem;
+}
+#about .about-content {
+    display:flex;
+}
+#about .about-text{
+    text-align: justify;
+}
+#about .about-text {
+    text-align: center;
+}
+
+
+
+
+
+/*media queries */
+@media screen and (max-device-width: 480px) and (orientation:portrait) {
+    body{
+        font size:1.25rem:
+            
+    }
+} 
+@media(min-wdith:600px) {
+    p{
+        font-size: 1.25rem;
+    }
+}
+ 
+/* iPhone Landscape */
+@media screen and (max-device-width: 480px) and (orientation:landscape) {
+}
+ 
+/* iPad Portrait */
+@media screen and (min-device-width: 481px) and (orientation:portrait) {
+}
+ 
+/* iPad Landscape */
+@media screen and (min-device-width: 481px) and (orientation:landscape) {
+}
+@media all and (min-width: 1024px) and (max-width: 1280px) { }
+ 
+@media all and (min-width: 768px) and (max-width: 1024px) { }
+ 
+@media all and (min-width: 480px) and (max-width: 768px) { }
+ 
+@media all and (max-width: 480px) { }
