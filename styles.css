@@ -20,6 +20,13 @@ body {
 .text-primary {
     color:#3693ff;
 }
+.imageman {
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+}
 /* Navbar */
 #navbar {
     display:flex;
@@ -110,11 +117,16 @@ body {
 /*media queries */
 @media screen and (max-device-width: 480px) and (orientation:portrait) {
     body{
-        font size:1.25rem:
+        font size:1.25rem; width 200px; float: left;}
             
-    }
+
 } 
-@media(min-wdith:600px) {
+@media screem and(max-width:600px) {
+    #navbar {
+        float:none;
+        width:100%}
+}
+    
     p{
         font-size: 1.25rem;
     }
