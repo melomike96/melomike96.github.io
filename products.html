@@ -3,13 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" conent="width=device-width, initial-scale=1.0">
-    <title>PartJunkies</title>
+    <title>AllProducts - Part Junkies</title>
     <link rel="stylesheet" href= "style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="header">
         <div class="container">
          <div class= "navbar">
              <div class="logo">
@@ -23,39 +22,22 @@
             <li><a href= "account.html">Account</a></li>
             </ul>
         </nav>
-             <a href="cart.html"><img src ="images/cart.png" width="30px" height="30px"></a>
+             <img src="images/cart.png" width="30px" height="30px">
              <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
     </div>
-    <div class="row">
-        <div class="col-2">
-             <h1>Find the Cheapest PC Parts<br>On the Market!</h1>
-            <p>Finding the best parts for your dream computer shouldn't be stressful. Nor should it empty your wallet out. We will help you get what you need at the lowest prices on the market.</p>
-            <a href="products.html" class="btn">Explore Now &#8594;</a>
-             </div> 
-        <div class="col-2">
-            <img src="images/pclineup.jpg">
-        </div>
-        </div>
     </div>
-</div>
-<div class="categories">
     <div class="small-container">
-         <div class="row">
-        <div class="col-3">
-        <img src="images/mobolineup.jpg">
+        <div class="row row-2">
+            <h2>All Products</h2>
+            <select>
+                <option>Default Sorting</option>
+                <option>Sort By Price</option>
+                <option>Sort by Popularity</option>
+                <option>Sort By Rating</option>
+                <option>Sort By sale</option>
+            </select>
         </div>
-        <div class="col-3">
-        <img src="images/cpulineup.jpg">
-        </div>
-        <div class="col-3">
-        <img src="images/gpulineup.jpg"> 
-        </div>
-            </div>
-        </div>
-    </div>
-<!-----Featured Products---->
-    <div class="small-container">
-    <h2 class="title">Featured Products</h2>
+        
         <div class="row">
             <div class="col-4">
             <img src="images/ryzen7cpu.jpg">
@@ -78,12 +60,11 @@
                 <p>$99</p>
             </div>
         </div>
-        <h2 class="title">Latest Products</h2>
         <div class="row">
             <div class="col-4">
-            <a href="product-details.html"><img src="images/asuswc.jpg">
-                <a href="product-details.html"> <h4>Asus Watercooler</h4></a>
-                   <p>$110</p>
+            <img src="images/asuswc.jpg">
+                <h4>Asus Watercooler</h4>
+                <p>$110</p>
             </div>
             <div class="col-4">
             <img src="images/fractalcase.jpg">
@@ -101,24 +82,14 @@
                 <p>$345</p>
             </div>
         </div>
-    </div>
-<!------------OFFER-------->
-    <div class="offer">
-        <div class="small-container">
-            <div class="row">
-                <div class="col-2">
-                    <img src="images/geforceoffer.jpg" class="offer-img">
-                    </div>
-                <div class="col-2">
-                    <p>The newest GPU on the market</p>
-                    <h1>GEFORCE RTX 3060 Ti</h1>
-                    <small>Looking for the newest generation of GPUS that are actually available and in stock? Look no further, we have what you need.</small><br>
-                    <a href="" class="btn">Buy Now&#8594;</a>
-                </div>
+        <div class="page-btn">
+            <span>1</span>
+            <span>2</span>
+            <span>3</span>
+            <span>4</span>
+            <span>&#8594;</span>
         </div>
     </div>
-</div>
-    <!-------Footer------->
     <div class="footer">
         <div class="container">
             <div class="row">
@@ -173,7 +144,5 @@
             }
     }
     </script>
-    </div>
-    
 </body>
 </html>

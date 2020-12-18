@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" conent="width=device-width, initial-scale=1.0">
+    <title>About Me- PartJunkies</title>
+    <link rel="stylesheet" href= "style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+         <div class= "navbar">
+             <div class="logo">
+        </div>
+        <nav>
+            <ul id= "MenuItems">
+            <li><a href= "index.html">Home</a></li>
+            <li><a href= "products.html">Products</a></li>
+            <li><a href= "about.html">About</a></li>
+            <li><a href= "contact.html">Contact</a></li>
+            <li><a href= "account.html">Account</a></li>
+            </ul>
+        </nav>
+             <a href="cart.html"><img src ="images/cart.png" width="30px" height="30px"></a>
+             <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+             
+            </div>
+        </div>
+    </div>
+<div class="about-container">
+    <h1>Michael Scarazza</h1>
+    <h2>UI/UX Web Developer</h2>
+    <div class="aboutmeimage">
+        <img src="images/self.jpg" width= "500px" alt="Photo of Me">
+    </div>
+    <p>Hello, my name is Michael Scarazza, I am just finishing up my Web Development Associates degree at Delaware County Community College. I will then be pursuing my bachelors in Information Technology at Southern New Hampshire University. I love to learn new things and test myself in areas I may not be skilled at in the moment. I enjoy playing video games, going out in nature, and talking to people.</p>
+    <br>
+    <p>Thanks for visiting my website!</p>
+    <a href="#" class="btn">Get in Touch</a>
+</div>
+
+<div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                <h3>Download our app</h3>
+                <p>Download our App for Android and IOS mobile phones.</p>
+                    <div class="app-logo">
+                        <img src="images/app-store.png">
+                        <img src="images/play-store.png">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                <img src="images/logo.jpg">
+                <p>We are here to get you the best deal possible, while providing you fast and convienent shipping.</p>   
+                </div>
+                    <div class="footer-col-3">
+                <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li> Join Affiliate</li>
+                        </ul>
+                </div>
+                    <div class="footer-col-4">
+                <h3>Follow Us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>Youtube</li>
+                        </ul>
+                </div>      
+        </div>
+            <hr>
+            <p class="Copyright">Copyright 2020- Michael Scarazza</p>
+    </div>
+    </div>
+<script>
+    var MenuItems = document.getElementById("MenuItems");
+    
+    MenuItems.style.maxHeight = "0px";
+    
+    function menutoggle(){
+        if(MenuItems.style.maxHeight == "0px")
+            {
+                MenuItems.style.maxHeight = "200px";
+            }
+        else
+            {
+                MenuItems.style.maxHeight = "0px";
+            }
+    }
+    </script>
+    </body>
+</html>

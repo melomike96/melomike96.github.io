@@ -3,14 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" conent="width=device-width, initial-scale=1.0">
-    <title>PartJunkies</title>
+    <title>Product Details - Part Junkies</title>
     <link rel="stylesheet" href= "style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="header">
-        <div class="container">
+        <div class="container">   
          <div class= "navbar">
              <div class="logo">
         </div>
@@ -23,39 +22,58 @@
             <li><a href= "account.html">Account</a></li>
             </ul>
         </nav>
-             <a href="cart.html"><img src ="images/cart.png" width="30px" height="30px"></a>
+             <img src="images/cart.png" width="30px" height="30px">
              <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
     </div>
+    </div>
+    
+    
+<!----single product detials----->
+    
+<div class="small-container single-product">
     <div class="row">
         <div class="col-2">
-             <h1>Find the Cheapest PC Parts<br>On the Market!</h1>
-            <p>Finding the best parts for your dream computer shouldn't be stressful. Nor should it empty your wallet out. We will help you get what you need at the lowest prices on the market.</p>
-            <a href="products.html" class="btn">Explore Now &#8594;</a>
-             </div> 
+            <img src="images/asuswc.jpg" width="80%" id="ProductImg">
+            <div class="small-img-row">
+                <div class="small-img-col">
+                <img src="images/wc1.jpg" width= "100%" class="small-img">
+                    </div>
+                  <div class="small-img-col">
+                <img src="images/wc2.jpg" width= "100%" class="small-img">
+                    </div>
+                  <div class="small-img-col">
+                <img src="images/wc3.jpg" width= "100%" class="small-img">
+                    </div>
+                  <div class="small-img-col">
+                <img src="images/wc4.jpg" width= "100%" class="small-img">
+                    </div>
+            </div>     
+        </div>
         <div class="col-2">
-            <img src="images/pclineup.jpg">
-        </div>
-        </div>
-    </div>
-</div>
-<div class="categories">
-    <div class="small-container">
-         <div class="row">
-        <div class="col-3">
-        <img src="images/mobolineup.jpg">
-        </div>
-        <div class="col-3">
-        <img src="images/cpulineup.jpg">
-        </div>
-        <div class="col-3">
-        <img src="images/gpulineup.jpg"> 
-        </div>
+            <p> Home / Asus WaterCooler </p>
+            <h1>Asus WaterCooler</h1>
+            <h4>$110.00</h4>
+            <input type="number" value= "1">
+            <a href="cart.html" class= "btn">Add To Cart</a>
+            
+            <h3> Product Details</h3>
+            <br>
+            <p>Asus ROG STRIX LC 360 RGB 80.95 CFM Liquid CPU Cooler</p>
             </div>
         </div>
     </div>
-<!-----Featured Products---->
+    
+    <!---title------>
     <div class="small-container">
-    <h2 class="title">Featured Products</h2>
+        <div class="row row-2">
+            <h2>Related Products</h2>
+            <p>View More</p>
+        </div>
+    </div>
+    
+    
+    
+    <div class="small-container"> 
         <div class="row">
             <div class="col-4">
             <img src="images/ryzen7cpu.jpg">
@@ -78,47 +96,7 @@
                 <p>$99</p>
             </div>
         </div>
-        <h2 class="title">Latest Products</h2>
-        <div class="row">
-            <div class="col-4">
-            <a href="product-details.html"><img src="images/asuswc.jpg">
-                <a href="product-details.html"> <h4>Asus Watercooler</h4></a>
-                   <p>$110</p>
-            </div>
-            <div class="col-4">
-            <img src="images/fractalcase.jpg">
-                <h4>Fractal Case</h4>
-                <p>$85</p>
-            </div>
-            <div class="col-4">
-            <img src="images/nzxtps.jpg">
-                <h4>NZXT Power Supply</h4>
-                <p>$89</p>
-            </div>
-            <div class="col-4">
-            <img src="images/msigeforce.jpg">
-                <h4>MSI GPU</h4>
-                <p>$345</p>
-            </div>
-        </div>
     </div>
-<!------------OFFER-------->
-    <div class="offer">
-        <div class="small-container">
-            <div class="row">
-                <div class="col-2">
-                    <img src="images/geforceoffer.jpg" class="offer-img">
-                    </div>
-                <div class="col-2">
-                    <p>The newest GPU on the market</p>
-                    <h1>GEFORCE RTX 3060 Ti</h1>
-                    <small>Looking for the newest generation of GPUS that are actually available and in stock? Look no further, we have what you need.</small><br>
-                    <a href="" class="btn">Buy Now&#8594;</a>
-                </div>
-        </div>
-    </div>
-</div>
-    <!-------Footer------->
     <div class="footer">
         <div class="container">
             <div class="row">
@@ -173,7 +151,28 @@
             }
     }
     </script>
-    </div>
+    <!---JS for product gallery----->
+    <script>
+    var ProductImg = document.getElementById("ProductImg");
+        var SmallImg = document.getElementsByClassName("small-img");
+        SmallImg[0].onclick = function()
+        {
+            ProductImg.src = SmallImg[0].src;    
+        }
+        SmallImg[1].onclick = function()
+        {
+            ProductImg.src = SmallImg[1].src;
+        }
+        SmallImg[2].onclick = function()
+        {
+            ProductImg.src = SmallImg[2].src;    
+        }
+        SmallImg[3].onclick = function()
+        {
+            ProductImg.src = SmallImg[3].src;    
+        }
+    
+    </script>
     
 </body>
 </html>
