@@ -4,6 +4,20 @@ padding: 0;
 box-sizing: border-box;
 
 }
+.portfolio
+{
+    padding: 30px;
+    font-size: 25px;
+}
+.portfolio ul{
+    display: inline-block;
+    list-style: none;
+
+}
+.portfolio ul li{
+    display: inline-block;
+    margin-right: 20px;
+}
 body{
     font-family: 'Poppins', sans-serif;
 }
